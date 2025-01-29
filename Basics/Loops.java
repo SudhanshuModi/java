@@ -1,10 +1,16 @@
 package Basics;
 
+import java.util.Scanner;
+
 public class Loops {
     public static void main(String args[]) {
         // forLoop();
         // whileLoop();
-        doWhile();
+        // doWhileLoop();
+        
+        Scanner sc = new Scanner(System.in);
+        // SumOfNaturalNo(sc);
+        tableOfNumber(sc);
     }
 
     public static void forLoop() {
@@ -21,11 +27,34 @@ public class Loops {
         }
     }
 
-    public static void doWhile() {
+    public static void doWhileLoop() {
         int i = 1;
         do {
             System.out.println(i);
             i++;
         } while (i == 7);
     }
+
+    // Questions
+
+    // Print the sum of First n Natural Numbers.
+    public static void SumOfNaturalNo(Scanner sc) {
+        int n = sc.nextInt();
+
+        int sum = 0;
+        for (int i = 1; i <= n; i++) {
+            sum += i;
+        }
+        System.out.println(sum);
+    }
+
+    // Print the table of a number input by the user.
+    public static void tableOfNumber(Scanner sc){
+        int n = sc.nextInt();
+
+        for(int i = 1; i<=10; i++){
+            System.out.println(n *i);
+        }
+    }
+
 }
