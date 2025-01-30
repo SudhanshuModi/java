@@ -14,7 +14,8 @@ public class Loops {
 
         // Home Work Section
         // evenNumberTillN(sc);
-        menuDrivenProgram(sc);
+        // menuDrivenProgram(sc);
+        isPrime(sc);
     }
 
     public static void forLoop() {
@@ -103,5 +104,20 @@ public class Loops {
             System.out.println("Enter 0 or 1");
             input = sc.nextInt();
         } while (input == 1);
+    }
+
+    // Print if a number is prime or not (Input n from the user).
+    public static void isPrime(Scanner sc) {
+        int num = sc.nextInt();
+        boolean isPrime = false;
+        for (int i = 2; i <= num / 2; i++) {
+            if (num % i == 0) {
+                isPrime = false;
+                break;
+            } else {
+                isPrime = true;
+            }
+        }
+        System.out.println(isPrime ? "prime" : "not prime");
     }
 }
