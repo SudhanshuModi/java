@@ -10,7 +10,8 @@ public class Loops {
         
         Scanner sc = new Scanner(System.in);
         // SumOfNaturalNo(sc);
-        tableOfNumber(sc);
+        // tableOfNumber(sc);
+        evenNumberTillN(sc);
     }
 
     public static void forLoop() {
@@ -54,6 +55,17 @@ public class Loops {
 
         for(int i = 1; i<=10; i++){
             System.out.println(n *i);
+        }
+    }
+
+    // Print all even numbers till n.
+    public static void evenNumberTillN(Scanner sc){
+        int n = sc.nextInt();
+
+        for(int i = 2; i<=n; i++){
+            if(i%2 == 0){
+                System.out.println(i);
+            }
         }
     }
 
