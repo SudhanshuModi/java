@@ -1,3 +1,4 @@
+package ApnaCollege;
 
 import java.util.Scanner;
 
