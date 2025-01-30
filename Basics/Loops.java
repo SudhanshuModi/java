@@ -15,7 +15,7 @@ public class Loops {
         // Home Work Section
         // evenNumberTillN(sc);
         // menuDrivenProgram(sc);
-        isPrime(sc);
+        // isPrime(sc);
     }
 
     public static void forLoop() {
@@ -120,4 +120,5 @@ public class Loops {
         }
         System.out.println(isPrime ? "prime" : "not prime");
     }
+
 }
