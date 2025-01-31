@@ -208,10 +208,10 @@ public class AdvancedPattern {
     }
 
     public static void invertedHalfPyramid() {
-        int num = 5;
+        int num = 4;
 
         for (int i = 1; i <= num; i++) {
-            for (int j = 1; j <= num - i; j++) {
+            for (int j = 0; j <= num - i; j++) {
                 System.out.print(i);
             }
             System.out.println();
